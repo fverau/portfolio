@@ -2,6 +2,7 @@
 
 :root {
   --yellow: #f2ff3c;
+  --yellow-opacity: rgba(242, 255, 60, 0.7);
   --white: #fff;
   --secondary-text: rgba(255, 255, 255, 0.6);
   --bg-black: #1f1f1f;
@@ -68,6 +69,9 @@ ul {
 .info__profession {
   margin: 0 0 1.5rem 0;
   color: var(--secondary-text);
+}
+.info__profession .js {
+  color: var(--yellow-opacity);
 }
 .info__text {
   margin: 0;
