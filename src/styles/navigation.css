@@ -1,0 +1,48 @@
+.nav {
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.nav::before {
+  content: "";
+  position: absolute;
+  width: 65%;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 0.1rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.nav__list {
+  padding-left: 0;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__list a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s;
+  position: relative;
+}
+.nav__list a::before {
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 0.3rem;
+  border-radius: 0.4rem;
+  position: absolute;
+  background-color: var(--yellow);
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.nav__list a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.nav__list a:hover {
+  color: var(--white);
+}

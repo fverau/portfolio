@@ -1,15 +1,26 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navigation from "../components/Navigation.astro";
+import "../styles/global.css";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+  <Navigation />
+  <article class="info">
+    <div class="info__profile">
+      <h1 class="info__name">Fabián Vera Uribe</h1>
+      <p class="info__profession">JavaScript Frontend Developer</p>
+      <p class="info__text">Creativo. Trabajador. Honesto.</p>
+      <p class="info__text">
+        Encuentro en la programación la capacidad de plasmar todo lo que se
+        pueda imaginar.
+      </p>
+    </div>
+    <img
+      class="info__img"
+      width="100px"
+      src="../../public/profile-img.jpg"
+      alt="imagen perfil"
+    />
+  </article>
+</BaseLayout>

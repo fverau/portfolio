@@ -1,0 +1,22 @@
+---
+import "../styles/navigation.css";
+
+const navItems = [
+  { key: 1, section: "Inicio", link: "home" },
+  { key: 2, section: "Sobre mi", link: "about" },
+  { key: 3, section: "Portafolio", link: "portfolio" },
+  { key: 4, section: "Contacto", link: "contact" },
+];
+---
+
+<nav class="nav">
+  <ol class="nav__list">
+    {
+      navItems.map(({ section, link }) => (
+        <li class="nav__items">
+          <a href={link}>{section}</a>
+        </li>
+      ))
+    }
+  </ol>
+</nav>
