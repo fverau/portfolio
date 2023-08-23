@@ -14,7 +14,7 @@ const navItems = [
     {
       navItems.map(({ section, link }) => (
         <li class="nav__items">
-          <a href={link}>{section}</a>
+          <a href={`#${link}`}>{section}</a>
         </li>
       ))
     }
