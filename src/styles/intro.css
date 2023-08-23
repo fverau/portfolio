@@ -34,6 +34,8 @@
   }
 }
 .info__profession {
+  font-family: var(--sec-font);
+  font-weight: 300;
   margin: 0 0 1.5rem 0;
   color: var(--secondary-text);
 }
@@ -41,6 +43,9 @@
   color: var(--yellow-opacity);
 }
 .info__text {
+  /* font-family: var(--sec-font); */
+  font-weight: 300;
+  font-size: 1.5rem;
   margin: 0;
   width: 75%;
   color: var(--secondary-text);
