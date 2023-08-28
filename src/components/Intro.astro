@@ -15,10 +15,16 @@ import "../styles/intro.css";
       imaginar.
     </p>
   </div>
-  <img
-    class="info__img"
-    width="100px"
-    src="../assets/profile.jpg"
-    alt="imagen perfil"
-  />
+  <picture>
+    <source srcset="../../public/profile-img.avif" type="image/avif" />
+    <source srcset="../../public/profile-img.webp" type="image/webp" />
+    <img
+      class="info__img"
+      loading="lazy"
+      width="100px"
+      height="100px"
+      src="../../public/profile-img.jpg"
+      alt="imagen perfil"
+    />
+  </picture>
 </article>

@@ -5,6 +5,8 @@
   flex-direction: column-reverse;
   align-items: center;
   color: var(--white);
+
+  margin-bottom: 5rem; /* gap to about section */
 }
 @media (min-width: 768px) {
   .info {

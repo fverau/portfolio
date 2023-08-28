@@ -28,6 +28,12 @@ body {
   margin: 0 auto;
   background-color: var(--bg-black);
 }
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--white);
+}
 
 a {
   text-decoration: none;
