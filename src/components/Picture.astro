@@ -1,0 +1,15 @@
+---
+const { path } = Astro.props;
+---
+
+<picture>
+  <source srcset=`${path}.avif` type="image/avif" />
+  <source srcset=`${path}.webp` type="image/webp" />
+  <img
+    loading="lazy"
+    width="100px"
+    height="100px"
+    src=`${path}.jpg`
+    alt="imagen perfil"
+  />
+</picture>
