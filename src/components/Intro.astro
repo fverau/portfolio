@@ -1,8 +1,9 @@
 ---
+import Picture from "./Picture.astro";
 import "../styles/intro.css";
 ---
 
-<article class="info">
+<article id="home" class="info">
   <div class="info__profile">
     <h1 class="info__name">Fabián Vera Uribe</h1>
     <p class="info__profession">
@@ -16,16 +17,5 @@ import "../styles/intro.css";
       >
     </p>
   </div>
-  <picture>
-    <source srcset="../../public/profile-img.avif" type="image/avif" />
-    <source srcset="../../public/profile-img.webp" type="image/webp" />
-    <img
-      class="info__img"
-      loading="lazy"
-      width="100px"
-      height="100px"
-      src="../../public/profile-img.jpg"
-      alt="imagen perfil"
-    />
-  </picture>
+  <Picture className="info__img" path="../../public/profile-img" />
 </article>
