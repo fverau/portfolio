@@ -1,11 +1,12 @@
 ---
-const { path } = Astro.props;
+const { path, className } = Astro.props;
 ---
 
 <picture>
   <source srcset=`${path}.avif` type="image/avif" />
   <source srcset=`${path}.webp` type="image/webp" />
   <img
+    class={className}
     loading="lazy"
     width="100px"
     height="100px"
