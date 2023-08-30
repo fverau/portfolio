@@ -1,0 +1,53 @@
+---
+import "../styles/about.css";
+---
+
+<article class="about">
+  <h3 class="about__title">Sobre mi</h3>
+  <div>
+    <div class="about__imgs">
+      <picture>
+        <source srcset="../../public/about1.avif" type="image/avif" />
+        <source srcset="../../public/about1.webp" type="image/webp" />
+        <img
+          class="about__img about__img--1"
+          loading="lazy"
+          width="100px"
+          height="100px"
+          src="../../public/about1.jpg"
+          alt="imagen perfil"
+        />
+      </picture>
+      <picture>
+        <source srcset="../../public/about2.avif" type="image/avif" />
+        <source srcset="../../public/about2.webp" type="image/webp" />
+        <img
+          class="about__img about__img--2"
+          loading="lazy"
+          width="100px"
+          height="100px"
+          src="../../public/about2.jpg"
+          alt="imagen perfil"
+        />
+      </picture>
+    </div>
+    <aside class="about__text">
+      <p>Nací en Chile en 1997</p>
+      <p>
+        Mi primer acercamiento con el desarrollo web fue, sin darme cuenta, con
+        14 años editando mi perfil de Tumblr.
+      </p>
+      <p>
+        Soy un férreo creyente de que la Web es una <span
+          >herramienta absoluta</span
+        >, esperando que los usuarios la utilicen para crear e innovar.
+      </p>
+      <p>Me caracterizo por ser <span>diligente y buen compañero.</span></p>
+      <p>
+        Tengo muchas ganas de participar en <span>proyectos relevantes</span>,
+        que entreguen valor a los usuarios.
+      </p>
+      <p><span>¡No dudes en contactarme!</span></p>
+    </aside>
+  </div>
+</article>

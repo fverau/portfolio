@@ -2,54 +2,14 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Header from "../components/Header.astro";
+import About from "../components/About.astro";
 
 import "../styles/global.css";
 ---
 
 <BaseLayout>
   <Header />
-
-  <article class="about">
-    <h3 class="about__title">Sobre mi</h3>
-    <div class="about__imgs">
-      <picture>
-        <source srcset="../../public/about1.avif" type="image/avif" />
-        <source srcset="../../public/about1.webp" type="image/webp" />
-        <img
-          class="about__imgs about__imgs--1"
-          loading="lazy"
-          width="100px"
-          height="100px"
-          src="../../public/about1.jpg"
-          alt="imagen perfil"
-        />
-      </picture>
-      <picture>
-        <source srcset="../../public/about2.avif" type="image/avif" />
-        <source srcset="../../public/about2.webp" type="image/webp" />
-        <img
-          class="about__imgs about__imgs--2"
-          loading="lazy"
-          width="100px"
-          height="100px"
-          src="../../public/about2.jpg"
-          alt="imagen perfil"
-        />
-      </picture>
-    </div>
-    <aside class="about__text">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        architecto suscipit vel repellat porro itaque sint atque blanditiis.
-      </p>
-      <p>
-        Amet voluptates corrupti pariatur dolorem ex eum iure ea perferendis
-        voluptatem vitae laboriosam molestias error non explicabo.
-      </p>
-      <p>
-        Culpa aspernatur facere vel a maxime veniam porro excepturi eaque?
-        Debitis esse iusto sed voluptate.
-      </p>
-    </aside>
-  </article>
+  <MainLayout>
+    <About />
+  </MainLayout>
 </BaseLayout>

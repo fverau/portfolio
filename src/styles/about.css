@@ -1,0 +1,112 @@
+/* ABOUT */
+
+.about {
+  margin-top: 7rem;
+}
+.about__title {
+  text-align: left;
+  font-size: 2.5rem;
+  font-family: var(--sec-font);
+  position: relative;
+  margin-bottom: 2rem;
+  /* color: var(--secondary-text); */
+}
+/* @media (min-width: 768px) {
+  .about__title {
+    margin-bottom: 6rem;
+  }
+} */
+.about__title::before {
+  content: "";
+  height: 0.05rem;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: var(--white); */
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+}
+.about > div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.about__text {
+  text-align: center;
+  font-weight: 200;
+  color: var(--secondary-text);
+  margin-bottom: 4rem; /* gap to imgs mobile*/
+}
+.about__text p span {
+  color: var(--white);
+  font-weight: 300;
+}
+.about__imgs {
+  margin: 0 auto;
+  position: relative;
+}
+.about__img {
+  width: 25rem;
+  height: auto;
+  object-fit: cover;
+}
+.about__img--1 {
+  position: absolute;
+  top: 16rem;
+  left: -9rem;
+  transform: rotate(10deg);
+  z-index: 1;
+}
+.about__img--2 {
+  position: absolute;
+  top: 0;
+  right: -8rem;
+  transform: rotate(-10deg);
+}
+@media (min-width: 768px) {
+  .about__title::before {
+    width: 85%;
+  }
+  .about > div {
+    flex-direction: row;
+    /* grid-template-columns: 1fr 2fr; */
+    align-items: center;
+    justify-content: center;
+  }
+  .about__imgs {
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: auto;
+  }
+  .about__img {
+    width: 20rem;
+    transition: all 0.3s;
+  }
+  .about__text {
+    width: 50%;
+    text-align: right;
+    margin-bottom: 0;
+  }
+  .about__img--1,
+  .about__img--2 {
+    position: unset;
+    transform: none;
+  }
+
+  .about__img--1 {
+    position: absolute;
+    top: 1rem;
+    left: -10;
+  }
+  .about__img--2 {
+    position: absolute;
+    top: -15rem;
+    right: -13rem;
+  }
+  .about__img--1:hover,
+  .about__img--2:hover {
+    transform: scale(1.1);
+    /* transform: rotate(5deg); */
+  }
+}
