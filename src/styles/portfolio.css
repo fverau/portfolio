@@ -1,0 +1,30 @@
+/* PORTFOLIO */
+.portfolio {
+  margin-top: 60rem;
+}
+.portfolio__title::before {
+  content: "";
+  height: 0.05rem;
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+}
+.portfolio .portfolio__title {
+  font-family: var(--sec-font);
+  font-size: 2.5rem;
+  text-align: right;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .portfolio {
+    margin-top: 20rem;
+  }
+  .portfolio .portfolio__title {
+    font-size: 3rem;
+  }
+  .portfolio__title::before {
+    width: 55%;
+  }
+}
