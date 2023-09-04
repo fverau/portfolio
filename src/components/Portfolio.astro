@@ -1,0 +1,33 @@
+---
+import Project from "./Project.astro";
+import "../styles/portfolio.css";
+
+const projects = {
+  pigGame: {
+    imagePath: "../../public/projects/01.pig-game",
+    title: "Pig Game",
+    repo: "https://github.com/fverau/pig-game",
+    liveDemo: "https://chic-travesseiro-a1053f.netlify.app/",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores doloribus ullam temporibus aspernatur reiciendis. Doloribus?",
+    tags: ["JavaScript", "CSS"],
+  },
+};
+const { pigGame } = projects;
+---
+
+<article id="portfolio" class="portfolio">
+  <header class="portfolio__header">
+    <h3 class="portfolio__title">Proyectos Destacados</h3>
+  </header>
+  <main class="projects">
+    <Project
+      title={pigGame.title}
+      repo={pigGame.repo}
+      liveDemo={pigGame.liveDemo}
+      path={pigGame.imagePath}
+      description={pigGame.description}
+      tags={pigGame.tags}
+    />
+  </main>
+</article>
