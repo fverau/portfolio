@@ -20,6 +20,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1rem = 10px */
   font-family: var(--main-font);
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -31,6 +32,7 @@ body {
   width: min(75rem, 70%);
   margin: 0 auto;
   background-color: var(--bg-black);
+  scroll-behavior: smooth;
 }
 h1,
 h2,
