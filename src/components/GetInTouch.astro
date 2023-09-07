@@ -1,0 +1,51 @@
+---
+---
+
+<article id="contact" class="contact">
+  <h3 class="contact__title">Contáctame</h3>
+
+  <p class="contact__text">
+    Actualmente estoy abierto a recibir ofertas laborales. Envía tu mensaje y
+    estaré atento y dispuesto a contestarte lo antes posible.
+  </p>
+
+  <a
+    class="contact__button"
+    href="mailto:fvera.uribe@gmail.com?subject=Te contacto desde tu portafolio&body=Cuerpo del correo"
+    >Salúdame</a
+  >
+</article>
+
+<style>
+  .contact {
+    margin: 20rem 0 15rem 0;
+    text-align: center;
+  }
+  .contact__title {
+    font-size: 3rem;
+    font-family: var(--sec-font);
+    margin-bottom: 10rem;
+  }
+  .contact__text {
+    color: var(--secondary-text);
+    max-width: 60rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 10rem;
+  }
+  .contact__button {
+    background-color: transparent;
+    padding: 1.5rem 3rem;
+    border-radius: 0.8rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 300;
+    border: 1px solid var(--white);
+  }
+  @media (min-width: 768px) {
+    .contact__button:hover {
+      background-color: var(--white-tint);
+    }
+  }
+</style>
